@@ -11,13 +11,13 @@ namespace benchmark
             [Benchmark(Baseline = true)]
             public void WithSpan()
             {
-                SamplesWithSpan.CalculateArraySum_With_Span();
+                SamplesWithSpan.SelectAndUpdateArrayItem_With_Span();
             }
 
             [Benchmark]
             public void WithoutSpan()
             {
-                SamplesWithoutSpan.CalculateArraySum_Without_Span();
+                SamplesWithoutSpan.SelectAndUpdateArrayItem_Without_Span();
             }
         }
 

@@ -18,5 +18,13 @@ namespace sut
 
             return arraySum;
         }
+
+        public static void SelectAndUpdateArrayItem_Without_Span()
+        {
+            var array = new int[] { 2, 4, 6, 8, 10, 12, 14, 16, 18, 20 };
+
+            for (int ctr = 2; ctr < 5; ctr++)
+                array[ctr] *= 2;
+        }
     }
 }
