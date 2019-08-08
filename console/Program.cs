@@ -7,13 +7,11 @@ namespace console
     {
         static void Main(string[] args)
         {            
-            // var result1 = 
-            SamplesWithSpan.SelectAndUpdateArrayItem_With_Span();
-            // Console.WriteLine($"With Span: {result1}");
+            var result1 =  SamplesWithSpan.StringTrim_With_Span();
+            Console.WriteLine($"With Span: {new string(result1)}");
 
-            // var result2 = 
-            SamplesWithoutSpan.SelectAndUpdateArrayItem_Without_Span();
-            // Console.WriteLine($"WithOUT Span: {result2}");
+            var result2 =  SamplesWithoutSpan.StringTrim_Without_Span();
+            Console.WriteLine($"WithOUT Span: {result2}");
         }
     }
 }

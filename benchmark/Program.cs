@@ -6,18 +6,19 @@ namespace benchmark
 {
     public class Program
     {
+        [MemoryDiagnoser]
         public class ArraySum_WithVsWithout_Span
         {
             [Benchmark(Baseline = true)]
-            public void WithSpan()
+            public void SystemTextJson()
             {
-                SamplesWithSpan.SelectAndUpdateArrayItem_With_Span();
+                SamplesWithSpan.Json_Serialize_With_Span();
             }
 
             [Benchmark]
-            public void WithoutSpan()
+            public void NewtonsftJson()
             {
-                SamplesWithoutSpan.SelectAndUpdateArrayItem_Without_Span();
+                SamplesWithoutSpan.Json_Serialize_Without_Span();
             }
         }
 
